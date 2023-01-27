@@ -1,0 +1,81 @@
+@use "../utils/" as u;
+
+.star {
+    border-radius: 50%;
+    padding: 16px; //width divide by 3
+    background-color: var(--medium-grey);
+    width: u.rem(48);
+    height: u.rem(48);
+    
+    @include u.breakpoint-down(small) {
+        padding: 12px;
+        width: u.rem(40);
+        height: u.rem(40);
+        
+        img {
+            transform: scale(0.85);
+        }
+    }
+}
+
+.number {
+    display: inline-flex;
+    justify-content: space-between;
+    width: u.rem(356);
+
+    @include u.breakpoint-down(small) {
+        width: u.rem(295);
+    }
+}
+
+.btn-round {
+    border-radius: 50%;
+    border: none;
+    color: var(--light-grey);
+    background-color: var(--medium-grey);
+    width: u.rem(55);
+    height: u.rem(55);
+    margin-top: u.rem(16);
+    margin-bottom: u.rem(32);
+    cursor: pointer;
+
+    &:hover {
+        background-color: var(--orange);
+        color: var(--white);
+    }
+
+    @include u.breakpoint-down(small) {
+        width: u.rem(42);
+        height: u.rem(42);
+        margin-top: u.rem(12);
+        margin-bottom: u.rem(24);
+    }
+}
+
+.btn-long {
+    width: u.rem(356);
+    height: u.rem(45);
+    background-color: var(--orange);
+    border: none;
+    color: var(--white);
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: u.rem(30);
+    
+    &:hover {
+        background-color: var(--white);
+        color: var(--orange);
+       
+    }
+
+    @include u.breakpoint-down(small) {
+        width: u.rem(295);
+        height: u.rem(42);
+    }
+}
+
+.active {
+    background-color: var(--light-grey);
+    color: var(--white);
+}

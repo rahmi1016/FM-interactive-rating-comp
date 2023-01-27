@@ -1,0 +1,73 @@
+@use '../utils' as u;
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.container-main,
+.container-thank {
+    background-color: var(--dark-blue);
+    width: u.rem(420);
+    height: u.rem(420);
+    border-radius: u.rem(20);
+    padding: u.rem(32);
+    margin-top: 22vh;
+       
+    @include u.breakpoint-down(small) {
+        width: u.rem(345);
+        min-width: u.rem(345);
+        height: u.rem(370);
+    }
+}
+
+.container-main {
+    @include u.breakpoint-down(small) {
+        padding: u.rem(25);
+    }
+}
+
+.container-thank {
+    display: none;
+    text-align: center;
+}
+
+.receipt {
+    padding-top: u.rem(20);
+    padding-bottom: u.rem(30);
+    
+    @include u.breakpoint-down(small) {
+        padding-top: u.rem(5);
+        padding-bottom: u.rem(18);
+    }
+}
+
+.rating {
+    display: block;
+    margin: auto;
+    background-color: var(--medium-grey);
+    padding-top: u.rem(8);
+    padding-bottom: u.rem(6);
+    width: u.rem(200);
+    border-radius: u.rem(16);
+    
+    @include u.breakpoint-down(small) {
+        padding-top: u.rem(8);
+        padding-bottom: u.rem(6);
+    }
+}
+
+.heading {
+    padding-top: u.rem(20);
+
+    @include u.breakpoint-down(small) {
+        padding-top: u.rem(12);
+    }
+
+}
+.attribution {
+ display: block;
+ margin-top: u.rem(12);
+}

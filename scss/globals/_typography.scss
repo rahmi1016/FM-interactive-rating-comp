@@ -1,0 +1,59 @@
+@use '../utils' as u;
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    &a {
+        color: hsl(228, 45%, 44%);
+      }
+  }
+
+  .btn-round, .btn-long {
+    font-family: u.$overpass;
+    font-weight: 500;
+    font-size: u.rem(16);
+
+    @include u.breakpoint-down(small) {
+      font-size: u.rem(13);
+    }
+  }
+
+  .btn-long {
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+
+  p {
+    font-family: u.$overpass;
+    font-size: u.rem(16);
+    color: var(--light-grey);
+
+    @include u.breakpoint-down(small) {
+      font-size: u.rem(15);
+      line-height: 1.5;
+      font-weight: 100;
+      
+    }
+  }
+
+  .rating {
+    text-align: center;
+    color: var(--orange);
+    font-family: u.$overpass;
+    font-weight: 100;
+    font-size: u.rem(15);
+
+    @include u.breakpoint-down(small) {
+      font-size: u.rem(14);
+      text-align: center;     
+    }
+  }
+  .heading {
+    font-size: u.rem(28);
+    
+    @include u.breakpoint-down(small) {
+      font-size: u.rem(24);
+      font-weight: 100;
+      
+    }
+  }
