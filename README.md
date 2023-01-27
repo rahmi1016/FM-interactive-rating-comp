@@ -35,8 +35,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: https://rahmi1016.github.io/FM-interactive-rating-comp/
+- Live Site URL: https://rahmi1016.github.io/FM-interactive-rating-comp/
 
 ## My process
 
